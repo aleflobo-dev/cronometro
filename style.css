@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container{
+  width: 100%;
+  height: 968px;
+  background: linear-gradient( #120c56, #000000);
+  overflow: hidden;
+}
+
+/*-----Background animado------*/
+
+.stars{
+  position: relative;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+  box-shadow: 15px 30px white,
+  125px 35px white,
+  50px 80px white,
+  10px 120px white,
+  380px 140px white,
+  290px 40px white,
+  223px 190px white,
+  400px 170px white,
+  420px 196px white,
+  420px 196px white,
+  530px 230px white,
+  600px 310px white,
+  700px 520px white,
+  515px 280px white,
+  458px 360px white,
+  710px 398px white,
+  820px 433px white,
+  860px 520px white,
+  575px 462px white,
+  915px 590px white,
+  980px 640px white,
+  1000px 730px white,
+  854px 690px white,
+  845px 600px white,
+  921px 750px white,
+  987px 768px white,
+  1024px 600px white;
+  animation: anim-stars 10s linear infinite;
+}
+
+@keyframes anim-stars {
+  from {
+      transform: translateY(0px);
+  }
+  to {
+      transform: translateY(-150px);
+  }
+}
+
+.stars::after{
+  content: " ";
+  position: absolute;
+  top: 150px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  box-shadow: 50px 30px white,
+  100px 80px white,
+  80px 120px white,
+  300px 20px white,
+  250px 130px white,
+  200px 50px white,
+  150px 100px white,
+  320px 100px white;
+}
+
+.stars2{
+  position: relative;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  box-shadow: 15px 15px white,
+    125px 35px white,
+    50px 80px white,
+    10px 120px white,
+    275px 90px white,
+    230px 10px white,
+    120px 130px white,
+    300px 130px white,
+    220px 115px white;
+  animation: anim-stars 20s linear infinite;
+}
+
+.stars2::after{
+  content: " ";
+  position: absolute;
+  top: 150px;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  box-shadow: 15px 15px white,
+    125px 35px white,
+    50px 80px white,
+    10px 120px white,
+    275px 90px white,
+    230px 10px white,
+    120px 130px white,
+    300px 130px white,
+    220px 115px white;
+}
+
+/*-----Fim Background-----*/
+
+header {
+  margin: 30px 30px;
+  text-align: center;
+  color: white;
+}
+
+section {
+  margin-bottom: 30px;
+  background: white;
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px;
+  width: 500px;
+  margin: auto;
+  box-shadow: 5px 5px 10px rgb(194, 185, 185);
+}
+
+#counter {
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 20px;
+}
+
+button {
+  background: #120c56;
+  color: white
+  text-decoration: none;
+  border: white;
+  font-size: 1.2em;
+  padding: 5px;
+  width: 6rem;
+  margin: 10px;
+  outline: none;
+  border-radius: 10px;
+}
+
+.button-start {
+  transition: all 0.1s ease-in-out 0s;
+}
+
+.button-start:hover {
+  top: -4px;
+  box-shadow: 0 4px 4px rgb(221, 194, 194);
+  transition: all 0.1s ease-in-out;
+  color: white;
+}
+
+.button-stop {
+  transition: all 0.1s ease-in-out 0s;
+}
+
+.button-stop:hover {
+  top: -4px;
+  box-shadow: 0 4px 4px rgb(221, 194, 194);
+  transition: all 0.1s ease-in-out;
+  color: white;
+}
+
+.button-reset {
+  transition: all 0.1s ease-in-out 0s;
+}
+
+.button-reset:hover {
+  top: -4px;
+  box-shadow: 0 4px 4px rgb(221, 194, 194);
+  transition: all 0.1s ease-in-out;
+  color: white;
+}
+footer {
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+  font-style: italic;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+  color: white;
+	}
+a:hover {
+	text-decoration: none;
+	color: rgb(221, 194, 194);
+	}
+a:active {
+	text-decoration: none
+	}
+
